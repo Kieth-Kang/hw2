@@ -5,27 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store Information</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div>
-        <h1>Store Information</h1>
+    <div class="p-8 flex items-center">
+        <h1 class="w-1/2 p-2 text-left font-bold text-4xl text-gray-700">Store Information</h1>
+        <a class="w-1/2 p-2 text-right font-bold text-1xl text-blue-600" href="index.html">Back to Homepage</a></li>
     </div>
-    <div>
-        <h2>LOCATION</h2>
-        <p>12212 N May Ave, Oklahoma City, OK 73120</p>
-        <h2>PHONE</h2>
-        <p>(348)-347-1349</p>
-        <h2>EMAIL</h2>
-        <p>eat@sichuan.com</p>
-        <h2>HOURS</h2>
-        <p>Accepting Dine-in, Drive thru, Online and Take-out orders during these times:</p>
-        <p>    Monday – Friday 11am to 8pm</p>
-        <p>    Saturday & Sunday 11am to 9pm</p>
+
+    <div class="px-16 md:flex items-center bg-gray-100">
+        <div class="md:w-1/2 m-auto space-y-2">
+            <h2 class="font-bold text-xl text-gray-700">LOCATION</h2>
+            <p>12212 N May Ave, Oklahoma City, OK 73120</p>
+            <h2 class="font-bold text-xl text-gray-700">PHONE</h2>
+            <p>(348)-347-1349</p>
+            <h2 class="font-bold text-xl text-gray-700">EMAIL</h2>
+            <p>eat@sichuan.com</p>   
+        </div>
+        <div class="md:w-1/2 p-8 space-y-4">
+            <h2 class="font-bold text-xl text-gray-700">HOURS</h2>
+            <p>Accepting Dine-in, Drive thru, Online and Take-out orders during these times:</p>
+            <li>Monday – Friday 11am to 8pm</li>
+            <li>Saturday & Sunday 11am to 9pm</li>
+        </div>
     </div>
-    <div>
-        <ul>
-            <li><a href="index.html">Back to Homepage</a></li>
-        </ul>
-    </div>
+
+    <div class="m-4">
+        <h2 class="text-2xl font-bold text-center">Contact US</h2>
+    ​
+        <form netlify class="mx-auto mt-8 w-80">
+          <label class="block mt-4 font-bold" for="name">What is your name?</label>
+          <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500" type="text" id="name" name="name">
+    
+          <label class="block mt-4 font-bold" for="favorite-color">What is your Email or phone number?</label>
+          <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500" type="text" id="contact-info" name="contactInfo">
+
+          <label class="block mt-4 font-bold" for="product">Your message to us</label>
+          <input class="p-2 w-full border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500 pb-20" type="text" id="message" name="message">
+    
+          <button class="block mt-4 text-white bg-purple-500 rounded px-4 py-2">Submit!</button>
+        </form>
+      </div>
+
 </body>
 </html>
